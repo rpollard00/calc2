@@ -106,6 +106,12 @@ const handleEquals = () => {
   if (inputState.op.length === 0) {
     return;
   }
+  // handle divide by 0
+  if (inputState.op === "/" && +inputState.currentVal === 0) {
+    updateDisplayText("^-.-^ < NO )");
+    inputState = newState();
+    return;
+  }
   // if currentVal isn't defined when we calc, we set it to storedVal
   if (inputState.currentVal.toString().length === 0) {
     inputState.currentVal = inputState.storedVal;
