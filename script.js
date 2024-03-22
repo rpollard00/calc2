@@ -1,5 +1,4 @@
 let display = document.querySelector("#display");
-display.textContent = "69 x 420";
 
 const op = {
   "+": (a, b) => a + b,
@@ -177,11 +176,21 @@ const handleInput = (e) => {
   console.log(val);
 };
 
+const updateDisplayText = (text) => {
+  display.textContent = text;
+};
+
+const handleKeyPress = (e) => {
+  const key = e.key;
+  const button = document.querySelector(`button[data-key="${key}"]`);
+  if (button) {
+    button.click();
+  }
+};
+
 buttonIds.map((b) => {
   let butt = document.querySelector(`#${b}`);
   butt.addEventListener("click", (e) => handleInput(e));
 });
 
-const updateDisplayText = (text) => {
-  display.textContent = text;
-};
+document.addEventListener("keydown", handleKeyPress);
