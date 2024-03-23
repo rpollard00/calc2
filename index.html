@@ -11,26 +11,26 @@
 
 <body>
     <div id="container">
-        <div id="display">80085</div>
+        <div id="display" class="glow">80085</div>
         <div id="calc-body">
             <div id="number-buttons">
                 <div class="num-row" id="row-4">
-                    <button data-key="7" class="input-button" type="button" id="seven">7</button>
+                    <button data-key="7" class="input-button left-button" type="button" id="seven">7</button>
                     <button data-key="8" class="input-button" type="button" id="eight">8</button>
                     <button data-key="9" class="input-button" type="button" id="nine">9</button>
                 </div>
                 <div class="num-row" id="row-3">
-                    <button data-key="4" class="input-button" type="button" id="four">4</button>
+                    <button data-key="4" class="input-button left-button" type="button" id="four">4</button>
                     <button data-key="5" class="input-button" type="button" id="five">5</button>
                     <button data-key="6" class="input-button" type="button" id="six">6</button>
                 </div>
                 <div class="num-row" id="row-2">
-                    <button data-key="1" class="input-button" type="button" id="one">1</button>
+                    <button data-key="1" class="input-button left-button" type="button" id="one">1</button>
                     <button data-key="2" class="input-button" type="button" id="two">2</button>
                     <button data-key="3" class="input-button" type="button" id="three">3</button>
                 </div>
                 <div class="num-row" id="row-1">
-                    <button data-key="0" class="input-button" type="button" id="zero">0</button>
+                    <button data-key="0" class="input-button left-button" type="button" id="zero">0</button>
                     <button data-key="o" class="input-button" type="button" id="doublezero">00</button>
                     <button data-key="." class="input-button" type="button" id="dec">.</button>
                 </div>
@@ -43,10 +43,12 @@
                     <button data-key="+" class="input-button" type="button" id="add">+</button>
                 </div>
                 <div id="operator-buttons">
-                    <button data-key="Escape" class="input-button" type="button" id="clear">C</button>
-                    <button class="input-button" type="button" id="blank-1"></button>
-                    <button class="input-button" type="button" id="blank-2"></button>
-                    <button data-key="Enter" class="input-button" type="button" id="equals">=</button>
+                    <button data-key="Escape" class="input-button right-button orange-button" type="button"
+                        id="clear">C</button>
+                    <button class="input-button right-button" type="button" id="blank-1"></button>
+                    <button class="input-button right-button" type="button" id="blank-2"></button>
+                    <button data-key="Enter" class="input-button right-button green-button" type="button"
+                        id="equals">=</button>
                 </div>
             </div>
         </div>
